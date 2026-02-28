@@ -1,10 +1,14 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+
 import React from "react";
 
 export default function Home() {
   return (
     <div>
-      <section className="min-h-screen flex flex-col items-center justify-center text-center bg-gray-50 px-4 ">
+      <section
+        id="hero-section"
+        className="min-h-screen flex flex-col items-center justify-center text-center bg-gray-50 px-4 "
+      >
         {/* Hero-section */}
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 text-gray-900">
           Hi, I am Shumaila Riaz
@@ -40,11 +44,18 @@ export default function Home() {
             <Mail size={28} />
           </a>
         </div>
+        <a
+          href="/Shumaila_Resume.pdf"
+          download
+          className="inline-flex items-center gap-2 mt-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 shadow-md hover:scale-105"
+        >
+          Download Resume
+        </a>
       </section>
 
       {/* About */}
 
-      <section className="y-20 bg-white px-6">
+      <section id="about" className="y-20 bg-white px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
