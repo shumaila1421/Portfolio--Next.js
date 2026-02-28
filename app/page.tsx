@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* About */}
 
-      <section id="about" className="y-20 bg-white px-6">
+      <section id="about" className="py-20 bg-white px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -65,6 +65,35 @@ export default function Home() {
             smooth user experiences, and turning ideas into scalable digital
             products.
           </p>
+        </div>
+      </section>
+
+      {/* Skills */}
+
+      <section id="skills" className="py-20 bg-gray-50 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-12 text-gray-900">Skills</h2>
+
+          {/* Skills Cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {[
+              "HTML",
+              "CSS",
+              "JavaScript",
+              "React",
+              "Next.js",
+              "Node.js",
+              "MongoDB",
+              "Tailwind CSS",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="bg-white shadow-md rounded-lg py-4 font-medium hover:shadow-lg transition"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
