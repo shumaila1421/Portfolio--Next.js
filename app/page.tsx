@@ -41,6 +41,21 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* About */}
+
+      <section className="y-20 bg-white px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
+          <p className="text-gray-700 text-lg leading-relaxed">
+            I build web applications that are not just functional, but
+            thoughtfully crafted. As a Full Stack Developer working with the
+            MERN stack and Next.js, I focus on writing clean code, designing
+            smooth user experiences, and turning ideas into scalable digital
+            products.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
