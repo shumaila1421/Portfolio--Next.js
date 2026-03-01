@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md z-50">
+    <nav className="fixed top-0 w-full  bg-white/80 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <Link href="/" scroll>
           <h1 className="text-2xl font-extrabold tracking-tight text-gray-800 hover:scale-105 transition-transform duration-100 cursor-pointer ">
