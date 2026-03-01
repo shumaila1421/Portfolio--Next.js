@@ -1,6 +1,7 @@
 "use client";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 import React from "react";
 
@@ -17,15 +18,28 @@ export default function Home() {
           className="min-h-screen flex flex-col items-center justify-center text-center   bg-linear-to-br from-blue-50 via-white to-purple-50 px-4 "
         >
           {/* Hero-section */}
-          <h1
-            className="text-5xl sm:text-6xl font-extrabold mb-4 bg-linear-to-r from-blue-600 to-purple-600 
-                bg-clip-text text-transparent"
-          >
-            Hi, I am Shumaila Riaz
+          <h1 className="text-5xl sm:text-6xl font-extrabold mb-4">
+            <span className="text-gray-900">I am </span>
+            <span
+              className="bg-linear-to-r from-blue-600 to-purple-600 
+                  bg-clip-text text-transparent"
+            >
+              <Typewriter
+                words={[
+                  "Shumaila Riaz",
+                  "Full Stack Developer",
+                  "Next.js Developer",
+                  "MERN Stack Developer",
+                ]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </span>
           </h1>
-          <p className="text-lg sm:text-xl text-gray-700 mb-6">
-            Full Stack Developer || Next.js
-          </p>
           <p className="text-gray-500 mb-6">
             I design and develop modern web applications with performance and
             user experience in mind.
@@ -78,13 +92,13 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         id="about"
-        className="py-20 bg-white px-6"
+        className="py-24 bg-white px-6"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
+          <h2 className="text-3xl font-bold  text-gray-900"> About Me</h2>
           <div
             className="h-1 w-20 mx-auto bg-linear-to-r 
-              from-blue-500 to-purple-500 rounded-full my-4"
+              from-blue-500 to-purple-500 rounded-full mt-2 mb-6"
           ></div>
           <p className="text-gray-700 text-lg leading-relaxed">
             I build web applications that are not just functional, but
@@ -97,12 +111,12 @@ export default function Home() {
       </motion.section>
       {/* Skills */}
 
-      <section id="skills" className="py-20 bg-gray-50 px-6">
+      <section id="skills" className="py-24 bg-gray-50 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12 text-gray-900">Skills</h2>
+          <h2 className="text-3xl font-bold text-gray-900">Skills</h2>
           <div
             className="h-1 w-20 mx-auto bg-linear-to-r 
-            from-blue-500 to-purple-500 rounded-full my-4"
+            from-blue-500 to-purple-500 rounded-full mt-2 mb-10"
           ></div>
           {/* Skills Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
