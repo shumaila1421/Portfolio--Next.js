@@ -15,7 +15,7 @@ export default function Home() {
       >
         <section
           id="hero-section"
-          className="min-h-screen flex flex-col items-center justify-center text-center   bg-linear-to-br from-blue-50 via-white to-purple-50 px-4 "
+          className="min-h-screen flex flex-col items-center justify-center text-center bg-linear-to-br from-blue-50 via-white to-purple-50 px-4 "
         >
           {/* Hero-section */}
           <h1 className="text-5xl sm:text-6xl font-extrabold mb-4">
@@ -27,9 +27,9 @@ export default function Home() {
               <Typewriter
                 words={[
                   "Shumaila Riaz",
-                  "Full Stack Developer",
-                  "Next.js Developer",
-                  "MERN Stack Developer",
+                  "a Full Stack Developer",
+                  "a Next.js Developer",
+                  "a MERN Stack Developer",
                 ]}
                 loop={true}
                 cursor
@@ -92,13 +92,13 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         id="about"
-        className="py-24 bg-white px-6"
+        className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold  text-gray-900"> About Me</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
           <div
-            className="h-1 w-20 mx-auto bg-linear-to-r 
-              from-blue-500 to-purple-500 rounded-full mt-2 mb-6"
+            className="h-1 w-25 mx-auto bg-linear-to-r 
+              from-blue-500 to-purple-500 rounded-full my-5"
           ></div>
           <p className="text-gray-700 text-lg leading-relaxed">
             I build web applications that are not just functional, but
@@ -111,12 +111,15 @@ export default function Home() {
       </motion.section>
       {/* Skills */}
 
-      <section id="skills" className="py-24 bg-gray-50 px-6">
+      <section
+        id="skills"
+        className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
+      >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Skills</h2>
+          <h2 className="text-3xl font-bold mb-12 text-gray-900">Skills</h2>
           <div
             className="h-1 w-20 mx-auto bg-linear-to-r 
-            from-blue-500 to-purple-500 rounded-full mt-2 mb-10"
+            from-blue-500 to-purple-500 rounded-full my-4"
           ></div>
           {/* Skills Cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
