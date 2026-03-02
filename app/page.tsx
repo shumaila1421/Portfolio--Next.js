@@ -144,6 +144,123 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <motion.section
+        id="projects"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
+      >
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-gray-900">Projects</h2>
+          <div className="h-1 w-20 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full mt-2 mb-10"></div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Project 1 */}
+            <motion.div
+              className="bg-white shadow-md rounded-xl p-6 text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+            >
+              <h3 className="text-xl font-bold mb-2 text-gray-900">
+                Sales Inventory Management System
+              </h3>
+              <p className="text-gray-700 mb-2">
+                Team-based full-stack application built with Next.js, Node.js,
+                Express, and MongoDB. Features authentication, role-based
+                access, and real-time inventory management.
+              </p>
+              <span className="text-gray-500 text-sm">
+                Tech: Next.js, Node.js, Express, MongoDB, Axios, Authentication,
+                Role-based Authorization
+              </span>
+              <div className="mt-2 text-sm text-blue-600">
+                Frontend:{" "}
+                <a
+                  href="https://github.com/beingharisali/full-stack-sims-next"
+                  target="_blank"
+                  className="underline"
+                >
+                  Next.js Repo
+                </a>{" "}
+                | Backend:{" "}
+                <a
+                  href="https://github.com/beingharisali/full-stack-sims-node"
+                  target="_blank"
+                  className="underline"
+                >
+                  Node.js Repo
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Project 2 */}
+            <motion.div
+              className="bg-white shadow-md rounded-xl p-6 text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+            >
+              <h3 className="text-xl font-bold mb-2 text-gray-900">
+                Grocery Store Management System
+              </h3>
+              <p className="text-gray-700 mb-2">
+                Ongoing team project using Next.js, Tailwind CSS, Node.js, and
+                MongoDB. Includes authentication, role-based authorization, and
+                store management features.
+              </p>
+              <span className="text-gray-500 text-sm">
+                Tech: Next.js, Tailwind CSS, Node.js, MongoDB, Authentication,
+                Role-based Authorization
+              </span>
+              <div className="mt-2 text-sm text-blue-600">
+                Frontend:{" "}
+                <a
+                  href="https://github.com/shahzaib-dev79/grocery-store-management-system-next"
+                  target="_blank"
+                  className="underline"
+                >
+                  Next.js Repo
+                </a>{" "}
+                | Backend:{" "}
+                <a
+                  href="https://github.com/shahzaib-dev79/grocery-store-management-system-node"
+                  target="_blank"
+                  className="underline"
+                >
+                  Node.js Repo
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Project 3 */}
+            <motion.div
+              className="bg-white shadow-md rounded-xl p-6 text-left hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+            >
+              <h3 className="text-xl font-bold mb-2 text-gray-900">
+                Calculator
+              </h3>
+              <p className="text-gray-700 mb-2">
+                A basic calculator built using HTML, CSS, and JavaScript.
+                Implements arithmetic operations with responsive design.
+              </p>
+              <span className="text-gray-500 text-sm">
+                Tech: HTML, CSS, JavaScript
+              </span>
+              <div className="mt-2 text-sm text-blue-600">
+                GitHub:{" "}
+                <a
+                  href="https://github.com/shumaila1421/Calculator"
+                  target="_blank"
+                  className="underline"
+                >
+                  Repo
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
     </div>
   );
 }
