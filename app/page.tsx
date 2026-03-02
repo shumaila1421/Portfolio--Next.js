@@ -271,8 +271,8 @@ export default function Home() {
         className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Contact Me</h2>
-          <div className="h-1 w-20 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full my-5"></div>
+          <h2 className="text-3xl font-bold text-gray-900">Contact Me</h2>
+          <div className="h-1 w-24 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full mb-5 mt-2"></div>
 
           <p className="text-gray-700 text-lg mb-6">
             Feel free to reach out for collaborations, projects, or just to say
