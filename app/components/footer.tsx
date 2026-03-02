@@ -13,14 +13,14 @@ export default function Footer() {
         </p>
 
         {/* Social Links */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 text-2xl md:text-xl">
           <a
             href="https://github.com/shumaila1421"
             target="_blank"
             rel="noreferrer"
-            className="text-gray-800 hover:text-black hover:scale-110 transition-all duration-300"
+            className="hover:text-black hover:scale-110 transition-all duration-300"
           >
-            <Github size={24} />
+            <Github />
           </a>
           <a
             href="https://www.linkedin.com/in/shumaila-riaz-56ab30354/"
@@ -28,13 +28,13 @@ export default function Footer() {
             rel="noreferrer"
             className="text-blue-700 hover:text-blue-800 hover:scale-110 transition-all duration-300"
           >
-            <Linkedin size={24} />
+            <Linkedin />
           </a>
           <a
             href="mailto:shumailariaz215@gmail.com"
             className="text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300"
           >
-            <Mail size={24} />
+            <Mail />
           </a>
         </div>
       </div>
