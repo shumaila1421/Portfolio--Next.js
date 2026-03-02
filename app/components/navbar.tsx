@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full  bg-white/80 backdrop-blur-md shadow-sm z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" scroll>
+        <Link href="#hero-section" scroll>
           <h1 className="text-2xl font-extrabold tracking-tight text-gray-800 hover:scale-105 transition-transform duration-100 cursor-pointer ">
             Shumaila <span className="text-blue-600">.</span>
           </h1>
