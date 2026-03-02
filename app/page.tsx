@@ -219,7 +219,7 @@ export default function Home() {
                   target="_blank"
                   className="underline"
                 >
-                  Next.js Repo
+                  Next.js Repository
                 </a>{" "}
                 | Backend:{" "}
                 <a
@@ -227,7 +227,7 @@ export default function Home() {
                   target="_blank"
                   className="underline"
                 >
-                  Node.js Repo
+                  Node.js Repository
                 </a>
               </div>
             </motion.div>
