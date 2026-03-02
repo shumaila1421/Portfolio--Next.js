@@ -261,6 +261,76 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
+
+      <motion.section
+        id="contact"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Contact Me</h2>
+          <div className="h-1 w-20 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full my-5"></div>
+
+          <p className="text-gray-700 text-lg mb-6">
+            Feel free to reach out for collaborations, projects, or just to say
+            hi!
+          </p>
+
+          {/* Social / Email Links */}
+          <div className="flex justify-center gap-6 mb-8">
+            <a
+              href="https://github.com/shumaila1421"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-800 hover:text-black hover:scale-110 transition-all duration-300"
+            >
+              <Github size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shumaila-riaz-56ab30354/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-700 hover:text-blue-800 hover:scale-110 transition-all duration-300"
+            >
+              <Linkedin size={28} />
+            </a>
+            <a
+              href="mailto:shumailariaz215@gmail.com"
+              className="text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300"
+            >
+              <Mail size={28} />
+            </a>
+          </div>
+
+          {/* Optional Contact Form */}
+          <form className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <textarea
+              placeholder="Your Message"
+              className="w-full mb-4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              rows={4}
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:scale-105 hover:shadow-xl transition-all duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </motion.section>
     </div>
   );
 }
