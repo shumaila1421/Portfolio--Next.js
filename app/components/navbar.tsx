@@ -2,6 +2,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +46,12 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md px-6 py-4 flex flex-col gap-4 text-gray-700 font-medium">
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2 }}
+          className="md:hidden bg-white shadow-md px-6 py-4 flex flex-col gap-4 text-gray-700 font-medium"
+        >
           <a href="#about" onClick={() => setIsOpen(false)}>
             About
           </a>
@@ -58,7 +64,7 @@ export default function Navbar() {
           <a href="#contact" onClick={() => setIsOpen(false)}>
             Contact
           </a>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
