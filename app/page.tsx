@@ -41,8 +41,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-gray-500 mb-6">
-            I design and develop modern web applications with performance and
-            user experience in mind.
+            I design and develop modern web applications with performance
           </p>
 
           {/* Social-links */}
