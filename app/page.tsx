@@ -95,23 +95,31 @@ export default function Home() {
         className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900"> About Me</h2>
-          <div
-            className="h-1 w-25 mx-auto bg-linear-to-r 
-              from-blue-500 to-purple-500 rounded-full my-5"
-          ></div>
-          <p className="text-gray-700 text-lg leading-relaxed mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">About Me</h2>
+          <div className="h-1 w-24 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full my-5"></div>
+
+          <p className="text-gray-700 text-lg leading-relaxed mb-10">
             I build web applications that are not just functional, but
             thoughtfully crafted. As a Full Stack Developer working with the
             MERN stack and Next.js, I focus on writing clean code, designing
             smooth user experiences, and turning ideas into scalable digital
-            products.
+            products. Currently interning at{" "}
+            <span className="text-blue-600 font-semibold">
+              Heapware Technologies
+            </span>
+            , where I contribute to real-world projects using Next.js, Node.js,
+            and MongoDB.
           </p>
-          <div className="flex flex-wrap justify-center gap-4 mt-4">
+
+          {/* Quick Info Cards */}
+          <div className="flex flex-wrap justify-center gap-4 mb-20">
             {[
-              { label: "🎓 Education", value: "MPhil Zoology" },
-              { label: "💼 Focus", value: "Full Stack Development" },
-              { label: "📍 Location", value: "Pakistan" },
+              {
+                label: "💼 Experience",
+                value: "Intern @ Heapware Technologies",
+              },
+              { label: "📍 Location", value: "Lahore, Pakistan" },
+              { label: "📧 Email", value: "shumailariaz215@gmail.com" },
             ].map((item) => (
               <div
                 key={item.label}
@@ -122,8 +130,49 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Education */}
+          <h3 className="text-2xl font-bold text-gray-900 mb-2 ">Education</h3>
+          <div className="h-1 w-16 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full mb-8"></div>
+          <div className="flex flex-col gap-4 text-left">
+            {[
+              {
+                year: "2024 – 2025",
+                degree: "Full Stack Web Development (MERN Stack)",
+                institute: "Ideoversity Training Institute, Arfa Tower Lahore",
+                icon: "💻",
+              },
+              {
+                year: "2022 – 2024",
+                degree: "MPhil Zoology",
+                institute: "Government College University, Lahore",
+                icon: "🔬",
+              },
+              {
+                year: "2018 – 2022",
+                degree: "BS Zoology",
+                institute: "Government College University, Lahore",
+                icon: "🎓",
+              },
+            ].map((edu) => (
+              <div
+                key={edu.year}
+                className="bg-white shadow-sm rounded-xl px-6 py-4 flex items-start gap-4 hover:shadow-md transition-all duration-300"
+              >
+                <span className="text-2xl mt-1">{edu.icon}</span>
+                <div>
+                  <p className="text-xs text-gray-400 font-medium mb-1">
+                    {edu.year}
+                  </p>
+                  <p className="text-gray-900 font-semibold">{edu.degree}</p>
+                  <p className="text-gray-500 text-sm">{edu.institute}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </motion.section>
+
       {/* Skills */}
 
       <motion.section
