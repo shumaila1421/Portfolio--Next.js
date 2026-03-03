@@ -66,7 +66,7 @@ export default function Home() {
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=shumailariaz215@gmail.com&su=Portfolio Inquiry"
               className="text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300 cursor-pointer"
-              target="blank"
+              target="_blank"
               rel="noreferrer"
             >
               <Mail size={28} />
