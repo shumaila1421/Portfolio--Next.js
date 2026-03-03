@@ -310,7 +310,13 @@ export default function Home() {
           </div>
 
           {/* Optional Contact Form */}
-          <form className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              alert("Message sent! I'll get back to you soon");
+            }}
+            className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md"
+          >
             <input
               type="text"
               placeholder="Your Name"
