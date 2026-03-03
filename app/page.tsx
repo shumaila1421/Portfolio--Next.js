@@ -100,13 +100,28 @@ export default function Home() {
             className="h-1 w-25 mx-auto bg-linear-to-r 
               from-blue-500 to-purple-500 rounded-full my-5"
           ></div>
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-gray-700 text-lg leading-relaxed mb-6">
             I build web applications that are not just functional, but
             thoughtfully crafted. As a Full Stack Developer working with the
             MERN stack and Next.js, I focus on writing clean code, designing
             smooth user experiences, and turning ideas into scalable digital
             products.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-4">
+            {[
+              { label: "🎓 Education", value: "MPhil Zoology" },
+              { label: "💼 Focus", value: "Full Stack Development" },
+              { label: "📍 Location", value: "Pakistan" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-white shadow-sm rounded-lg px-5 py-3 text-sm text-gray-700"
+              >
+                <span className="font-semibold">{item.label}:</span>{" "}
+                {item.value}
+              </div>
+            ))}
+          </div>
         </div>
       </motion.section>
       {/* Skills */}
