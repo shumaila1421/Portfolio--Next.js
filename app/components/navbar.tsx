@@ -26,7 +26,7 @@ export default function Navbar() {
             Skills
           </a>
           <a href="#projects" className="hover:text-blue-600 transition">
-            Project
+            Projects
           </a>
           <a href="#contact" className="hover:text-blue-600 transition">
             Contact
