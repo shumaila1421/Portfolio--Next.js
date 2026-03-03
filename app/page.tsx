@@ -111,39 +111,43 @@ export default function Home() {
       </motion.section>
       {/* Skills */}
 
-      <section
+      <motion.section
         id="skills"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
         className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12 text-gray-900">Skills</h2>
-          <div
-            className="h-1 w-20 mx-auto bg-linear-to-r 
-            from-blue-500 to-purple-500 rounded-full my-4"
-          ></div>
-          {/* Skills Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">Skills</h2>
+          <div className="h-1 w-20 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full mb-12"></div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             {[
-              "HTML",
-              "CSS",
-              "JavaScript",
-              "React",
-              "Next.js",
-              "Node.js",
-              "MongoDB",
-              "Tailwind CSS",
-            ].map((skill) => (
-              <div
-                key={skill}
-                className="bg-white shadow-md rounded-xl py-6 hover:shadow-xl hover:-translate-y-2 
-                  transition-all duration-300 cursor-pointer"
+              { name: "HTML", icon: "🌐" },
+              { name: "CSS", icon: "🎨" },
+              { name: "JavaScript", icon: "⚡" },
+              { name: "React", icon: "⚛️" },
+              { name: "Next.js", icon: "▲" },
+              { name: "Node.js", icon: "🟢" },
+              { name: "MongoDB", icon: "🍃" },
+              { name: "Tailwind CSS", icon: "💨" },
+            ].map((skill, index) => (
+              <motion.div
+                key={skill.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white shadow-md rounded-xl py-6 px-4 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer"
               >
-                {skill}
-              </div>
+                <div className="text-3xl mb-2">{skill.icon}</div>
+                <div className="font-medium text-gray-800">{skill.name}</div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <motion.section
         id="projects"
