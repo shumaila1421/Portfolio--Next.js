@@ -195,7 +195,7 @@ export default function Home() {
         className="py-24 px-6 bg-linear-to-br from-blue-50 via-white to-purple-50"
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Skills</h2>
+          <h2 className="text-3xl font-black text-gray-900">Skills</h2>
 
           <div className="h-1 w-20 mx-auto bg-linear-to-r from-blue-500 to-purple-500 rounded-full mb-12 mt-2"></div>
 
