@@ -6,6 +6,30 @@ import { Typewriter } from "react-simple-typewriter";
 import React from "react";
 
 export default function Home() {
+  const roles = [
+    "Shumaila Riaz",
+    "a Full Stack Developer",
+    "a Next.js Developer",
+    "a MERN Stack Developer",
+  ];
+
+  const socialLinks = [
+    {
+      icon: Github,
+      href: "https://github.com/shumaila1421",
+      className: "text-gray-800 hover:text-black",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/shumaila-riaz-56ab30354/",
+      className: "text-blue-700 hover:text-blue-800",
+    },
+    {
+      icon: Mail,
+      href: "mailto:shumailariaz215@gmail.com",
+      className: "text-red-500 hover:text-red-600",
+    },
+  ];
   return (
     <div>
       <motion.div
@@ -15,23 +39,15 @@ export default function Home() {
       >
         <section
           id="hero-section"
-          className="min-h-screen flex flex-col items-center justify-center text-center bg-linear-to-br from-blue-50 via-white to-purple-50 px-4 "
+          className="min-h-screen flex flex-col items-center justify-center text-center bg-linear-to-br from-blue-50 via-white to-purple-50 px-4"
         >
-          {/* Hero-section */}
           <h1 className="text-5xl sm:text-6xl font-extrabold mb-4">
             <span className="text-gray-900">I am </span>
-            <span
-              className="bg-linear-to-r from-blue-600 to-purple-600 
-                  bg-clip-text text-transparent"
-            >
+
+            <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               <Typewriter
-                words={[
-                  "Shumaila Riaz",
-                  "a Full Stack Developer",
-                  "a Next.js Developer",
-                  "a MERN Stack Developer",
-                ]}
-                loop={true}
+                words={roles}
+                loop
                 cursor
                 cursorStyle="|"
                 typeSpeed={70}
@@ -40,45 +56,31 @@ export default function Home() {
               />
             </span>
           </h1>
-          <p className="text-gray-500 mb-6">
-            I design and develop modern web applications with performance and
-            user experience in mind.
+
+          <p className="text-gray-500 mb-6 max-w-xl">
+            I design and build modern web applications with focus on
+            performance, scalability and user experience.
           </p>
 
-          {/* Social-links */}
-          <div className="flex gap-6 justify-center mb-6">
-            <a
-              className="text-gray-800 hover:text-black hover:scale-110 transition-all duration-300 cursor-pointer"
-              href="https://github.com/shumaila1421"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Github size={28} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/shumaila-riaz-56ab30354/"
-              className="text-blue-700 hover:text-blue-800 hover:scale-110 transition-all duration-300 cursor-pointer"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Linkedin size={28} />
-            </a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=shumailariaz215@gmail.com&su=Portfolio Inquiry"
-              className="text-red-500 hover:text-red-600 hover:scale-110 transition-all duration-300 cursor-pointer"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Mail size={28} />
-            </a>
+          {/* Social links */}
+          <div className="flex gap-6 mb-6">
+            {socialLinks.map(({ icon: Icon, href, className }) => (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className={`${className} hover:scale-110 transition`}
+              >
+                <Icon size={28} />
+              </a>
+            ))}
           </div>
+
           <a
             href="/Shumaila_Resume.pdf"
             download
-            className="inline-flex items-center gap-2 mt-2 bg-linear-to-r from-blue-600 to-purple-600 
-            text-white px-6 py-3 rounded-lg font-medium 
-              hover:scale-105 hover:shadow-xl 
-              transition-all duration-300"
+            className="bg-linear-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:scale-105 hover:shadow-lg transition"
           >
             Download Resume
           </a>
