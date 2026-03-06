@@ -101,7 +101,7 @@ export default function Home() {
         className="min-h-screen flex flex-col items-center justify-center text-center bg-linear-to-br from-blue-50 via-white to-purple-50 px-4"
       >
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4">
-          <span className="text-gray-900">I am </span>
+          <span className="text-gray-900">You are </span>
 
           <span className="bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             <Typewriter
