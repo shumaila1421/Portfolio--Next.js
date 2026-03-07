@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shumaila's Portfolio",
-  description: "Modren and Minimalist Next.js Portfolio",
+  title: "Shumaila Riaz || Portfolio",
+  description: "Next.js developer portfolio showcasing projects and skills",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className="pt-24">{children}</main>
+        <main className="pt-24 min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>

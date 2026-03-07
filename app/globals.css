@@ -1,13 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0f172a;
+  --foreground: #e2e8f0;
+  --primary: #22c55e;
+  --secondary: #64748b;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
-.bg-gradient-hero {
-  background: linear-gradient(to bottom right, #eff6ff, #ffffff, #faf5ff);
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--geist-sans), sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-hero-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.9) 0%,
+    rgba(30, 41, 59, 0.9) 100%
+  );
 }
