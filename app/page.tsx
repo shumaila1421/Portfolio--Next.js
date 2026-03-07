@@ -1,5 +1,6 @@
 "use client";
 
+import About from "./about";
 import Hero from "./hero";
 // import About from "@/components/About";
 // import Skills from "@/components/Skills";
@@ -10,6 +11,8 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <About />
+
       {/* <About />
       <Skills />
       <Projects />
