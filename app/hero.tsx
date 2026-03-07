@@ -6,23 +6,23 @@ import { Typewriter } from "react-simple-typewriter";
 
 const roles = [
   "Shumaila Riaz",
-  "Full Stack Developer",
-  "Next.js Developer",
-  "MERN Stack Developer",
+  "a Full Stack Developer",
+  "a Next.js Developer",
+  "a MERN Stack Developer",
 ];
 
 export default function Hero() {
   return (
     <section
       id="hero-section"
-      className="min-h-screen flex flex-col items-center justify-center text-center px-6"
+      className="min-h-screen flex flex-col items-center justify-center text-center px-6 "
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
           I am{" "}
           <span className="text-green-400">
             <Typewriter
@@ -36,18 +36,18 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p className="text-gray-400 max-w-xl mx-auto mb-6">
+        <p className="text-gray-300 max-w-xl mx-auto mb-6">
           I build modern web applications using the MERN stack and Next.js,
           focusing on clean code and good user experience.
         </p>
 
-        <div className="flex justify-center gap-6 mb-6">
+        <div className="flex justify-center gap-6 mb-6 text-white">
           <a
             href="https://github.com/shumaila1421"
             target="_blank"
             rel="noreferrer"
           >
-            <Github className="hover:text-green-400 transition" />
+            <Github className="hover:text-green-400 transition text-white" />
           </a>
 
           <a
@@ -55,7 +55,7 @@ export default function Hero() {
             target="_blank"
             rel="noreferrer"
           >
-            <Linkedin className="hover:text-green-400 transition" />
+            <Linkedin className="hover:text-green-400 transition text-white" />
           </a>
 
           <Mail className="hover:text-green-400 transition" />
