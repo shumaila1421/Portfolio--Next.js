@@ -50,7 +50,7 @@ export default function About() {
           <span
             key={skill}
             className="px-4 py-2 bg-green-700 text-green-100 rounded-full text-sm sm:text-base font-medium
-                 hover:bg-green-500 hover:text-gray-900 hover:scale-105 transition-all duration-200 cursor-pointer"
+                 hover:bg-green-500 hover:text-gray-900 hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             {skill}
           </span>
