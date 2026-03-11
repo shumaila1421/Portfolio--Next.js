@@ -56,7 +56,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="hover:text-green-100 transition-colors"
+              className="hover:text-green-400 transition-colors"
             >
               {link.name}
             </a>
