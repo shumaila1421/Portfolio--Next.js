@@ -49,7 +49,7 @@ export default function Navbar() {
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
-          className="md:hidden px-6 pb-6 flex flex-col gap-4 text-white"
+          className="md:hidden px-6 pb-6 flex flex-col gap-4 text-black"
         >
           {navLinks.map((link) => (
             <a
