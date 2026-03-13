@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Shumaila Riaz || Portfolio",
-  description: "Next.js developer portfolio showcasing projects ",
+  description: "Next.js developer portfolio showcasing projects and skills. ",
 };
 
 export default function RootLayout({
