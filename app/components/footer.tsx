@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row gap-6 items-center">
           <div className="flex items-center gap-2">
             <Mail size={18} />
-            <span className="text-gray-400">shumailariaz215@gmail.com</span>
+            <span className="text-gray-400">shumailariaz1410@gmail.com</span>
           </div>
 
           <div className="flex gap-4">
