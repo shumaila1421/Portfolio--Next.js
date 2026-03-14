@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shumaila Riaz || Portfolio",
+  title: "Shumaila || Portfolio",
   description: "Next.js developer portfolio showcasing projects and skills. ",
 };
 
